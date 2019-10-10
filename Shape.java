@@ -2,9 +2,13 @@ abstract class Shape{
     private boolean filled;
     private String color; 
     private String shapeType;
+    private Int xCoordinate;
+    private Int yCoordinate;
 
     public String toString(){
-        return "==" + getShapeType() + "==";
+        String str = "==" + getShapeType() + "==";
+        str += "\nFilled: " + getFilled();
+        str += "\nColor: " + getColor();
     }
 
     public boolean getFilled(){
@@ -17,5 +21,13 @@ abstract class Shape{
 
     public String getShapeType(){
         return shapeType;
+    }
+
+    public Int getXCoordinate(){
+        return xCoordinate;
+    }
+
+    public Int getYCoordinate(){
+        return yCoordinate;
     }
 }
