@@ -14,8 +14,7 @@ abstract class Shape{
 
     public String toString(){
         String str = "==" + getShapeType() + "==";
-        str += "\nFilled: " + getFilled();
-        str += "\nColor: " + getColor();
+        return str;
     }
 
     public boolean getFilled(){
