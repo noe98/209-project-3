@@ -2,10 +2,10 @@ abstract class Shape{
     protected boolean filled;
     protected String color; 
     protected String shapeType;
-    protected Int xCoordinate;
-    protected Int yCoordinate;
+    protected int xCoordinate;
+    protected int yCoordinate;
 
-    public Shape(Int xCoordinate, Int yCoordinate, String color, boolean filled){
+    public Shape(int xCoordinate, int yCoordinate, String color, boolean filled){
         this.xCoordinate = xCoordinate;
         this.yCoordinate = yCoordinate;
         this.color = color;
@@ -30,11 +30,11 @@ abstract class Shape{
         return shapeType;
     }
 
-    public Int getXCoordinate(){
+    public int getXCoordinate(){
         return xCoordinate;
     }
 
-    public Int getYCoordinate(){
+    public int getYCoordinate(){
         return yCoordinate;
     }
 }
