@@ -1,9 +1,16 @@
 abstract class Shape{
-    private boolean filled;
-    private String color; 
-    private String shapeType;
-    private Int xCoordinate;
-    private Int yCoordinate;
+    protected boolean filled;
+    protected String color; 
+    protected String shapeType;
+    protected Int xCoordinate;
+    protected Int yCoordinate;
+
+    public Shape(Int xCoordinate, Int yCoordinate, String color, boolean filled){
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
+        this.color = color;
+        this.filled = filled;
+    }
 
     public String toString(){
         String str = "==" + getShapeType() + "==";
