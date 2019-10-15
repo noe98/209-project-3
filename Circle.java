@@ -17,7 +17,7 @@ public class Circle extends Shape{
 
     public String toString(){
         String str = super.toString();
-        str += "Radius: " + radius;
+        str += "\nRadius: " + radius;
         str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;

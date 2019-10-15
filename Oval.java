@@ -17,7 +17,7 @@ public class Oval extends Circle{
 
     public String toString(){
         String str = "==" + getShapeType() + "==";
-        str += "Radius: " + radius;
+        str += "\nRadius 1: " + radius;
         str += "\nRadius 2: " + radius2;
         str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
         str += "\nFiled: " + filled;
