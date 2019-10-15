@@ -14,4 +14,15 @@ public class Oval extends Circle{
     public void setRadius2(int radius2){
         this.radius2 = radius2;
     }
+
+    public String toString(){
+        String str = "==" + getShapeType() + "==";
+        str += "Radius: " + radius;
+        str += "\nRadius 2: " + radius2;
+        str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
+        str += "\nFiled: " + filled;
+        str += "\nColor: " + color;
+        str += "\n====\n";
+        return str;
+    }
 }
