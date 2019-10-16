@@ -40,6 +40,9 @@ public class Triangle extends Shape{
         str += "==Triangle==";
         str += "\nWidth: " + width;
         str += "\nHeight: " + height;
+        str += "\nCoordinates: " + "(" +xCoords[0] + "," + yCoords[0] +")";
+        str += ", (" + xCoords[1] + "," +yCoords[1] +")";
+        str += ", (" + xCoords[2] + "," +yCoords[2] +")";
         str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
