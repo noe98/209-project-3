@@ -4,6 +4,7 @@ public class Triangle extends Shape{
     private int[] yCoords;
     private int width;
     private int height;
+    private double side;
 
 
 
@@ -41,12 +42,13 @@ public class Triangle extends Shape{
         str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
-        str += "\n"
-        side = math.sqrt((width^2 + height^2));
+        str += "\n";
+        side = Math.sqrt((width^2 + height^2));
         str += "\nSide 1: " + side;
         str += "\nSide 2: " + width;
         str += "\nSide 3: " + side;
         str += "\nPerimeter: " + side *2 + width;
+        return str;
      
     }
 }
