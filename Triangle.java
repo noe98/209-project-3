@@ -37,7 +37,8 @@ public class Triangle extends Shape{
 
 
         String str = super.toString();
-        str += "Width: " + width;
+        str += "==Triangle==";
+        str += "\nWidth: " + width;
         str += "\nHeight: " + height;
         str += "\nPosition: " + xCoordinate + ", " + yCoordinate;
         str += "\nFiled: " + filled;
@@ -48,6 +49,7 @@ public class Triangle extends Shape{
         str += "\nSide 2: " + width;
         str += "\nSide 3: " + side;
         str += "\nPerimeter: " + side *2 + width;
+        str += "\n====";
         return str;
      
     }
