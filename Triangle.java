@@ -15,7 +15,6 @@ public class Triangle extends Shape{
         super(xCoordinate, yCoordinate, color, filled);
         this.width = width;
         this.height = height;
-        this.side = side;
 
         int[] xCoords = new int[3];
         xCoords[0]= xCoordinate + width/2;
