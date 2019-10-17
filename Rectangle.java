@@ -13,13 +13,13 @@ public class Rectangle extends Shape{
     // this one inheirits from
     public Rectangle(int width, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
-        int[] xCoords = new int[3];
+        int[] xCoords = new int[4];
         xCoords[0]= xCoordinate;
         xCoords[1]=xCoordinate + width;
         xCoords[2]=xCoordinate + width;
         xCoords[3] = xCoordinate;
     
-        int[] yCoords = new int[3];
+        int[] yCoords = new int[4];
         yCoords[0]= yCoordinate;
         yCoords[1]=yCoordinate;
         yCoords[2]=yCoordinate + width;
