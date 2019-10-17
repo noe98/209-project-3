@@ -16,16 +16,17 @@ public class Triangle extends Shape{
         this.width = width;
         this.height = height;
 
-        int[] xCoords = new int[3];
+        xCoords = new int[3];
         xCoords[0]= xCoordinate + width/2;
         xCoords[1]=xCoordinate + width;
         xCoords[2]=xCoordinate;
     
-        int[] yCoords = new int[3];
+        yCoords = new int[3];
         yCoords[0]= yCoordinate;
         yCoords[1]=yCoordinate + height;
         yCoords[2]=yCoordinate + height;
     
+        shapeType = "Triangle";
     }
 
     public double getWidth(){
@@ -37,10 +38,7 @@ public class Triangle extends Shape{
     }
 
     public String toString(){
-
-
         String str = super.toString();
-        str += "==Triangle==";
         str += "\nWidth: " + width;
         str += "\nHeight: " + height;
         str += "\nCoordinates: " + "(" +xCoords[0] + "," + yCoords[0] +")";
@@ -50,11 +48,11 @@ public class Triangle extends Shape{
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
         str += "\n";
-        side = Math.sqrt((width^2 + height^2));
+        side = Math.sqrt(Math.pow(height, 2)+Math.pow(width, 2)/4);
         str += "\nSide 1: " + side;
         str += "\nSide 2: " + width;
         str += "\nSide 3: " + side;
-        str += "\nPerimeter: " + side *2 + width;
+        str += "\nPerimeter: " + (side *2 + width);
         str += "\n====";
         return str;
      

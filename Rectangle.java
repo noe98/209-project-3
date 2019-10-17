@@ -55,7 +55,7 @@ public class Rectangle extends Shape{
         str += "\nSide 2: " + height;
         str += "\nSide 3: " + width;
         str += "\nSide 3: " + height;
-        str += "\nPerimeter: " + 2 * width + 2 * height;
+        str += "\nPerimeter: " + (2 * width + 2 * height);
         str += "\n====";
         return str;
     }
