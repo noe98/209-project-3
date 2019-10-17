@@ -13,12 +13,16 @@ public class Triangle extends Shape{
     // this one inheirits from
     public Triangle(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
-        int[] xCoords = new int[2];
+        this.width = width;
+        this.height = height;
+        this.side = side;
+
+        int[] xCoords = new int[3];
         xCoords[0]= xCoordinate + width/2;
         xCoords[1]=xCoordinate + width;
         xCoords[2]=xCoordinate;
     
-        int[] yCoords = new int[2];
+        int[] yCoords = new int[3];
         yCoords[0]= yCoordinate;
         yCoords[1]=yCoordinate + height;
         yCoords[2]=yCoordinate + height;
