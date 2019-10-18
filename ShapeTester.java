@@ -6,6 +6,8 @@ public class ShapeTester{
         System.out.println(r);
         Triangle t = new Triangle(2,3,1,1,"PURPLE",false);
         System.out.println(t);
+        Octagon o = new Octagon (2,2,2,2, "GREEN", false);
+        System.out.println(o);
         
     }
 }

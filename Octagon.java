@@ -64,15 +64,17 @@ public class Octagon extends Shape{
         str += "\nColor: " + color;
         str += "\n";
         str += "\nSide 1: " + ((1/3) * width);
-        str += "\nSide 2: " + Math.sqrt(pow((1/3) * height),2) + pow(((1/3) * width), 2);
+        str += "\nSide 2: " + Math.sqrt(Math.pow(((1/3) * height),2) + Math.pow(((1/3) * width), 2));
         str += "\nSide 3: " + ((1/3) * height);
         str += "\nSide 3: " + ((1/3) * height);
-        str += "\nSide 4: " + Math.sqrt(pow((1/3) * height),2) + pow(((1/3) * width), 2);
+        str += "\nSide 4: " + Math.sqrt(Math.pow(((1/3) * height),2.0) + Math.pow(((1/3) * width), 2.0));
         str += "\nSide 5: " + ((1/3) * width);
-        str += "\nSide 6: " + Math.sqrt(pow((1/3) * height),2) + pow(((1/3) * width), 2);
+        str += "\nSide 6: " + Math.sqrt(Math.pow(((1/3) * height),2.0) + Math.pow(((1/3) * width), 2.0));
         str += "\nSide 7: " + ((1/3) * height);
-        str += "\nSide 8: " + Math.sqrt(pow((1/3) * height),2) + pow(((1/3) * width), 2);
-        str += "\nPerimeter: " + ((2 * width *(1/3)) + (2 * height * (1/3)) + (2 * Math.sqrt(pow((1/3) * height),2) + pow(((1/3) * width), 2)));
+        str += "\nSide 8: " + Math.sqrt(Math.pow(((1/3) * height),2.0) + Math.pow(((1/3) * width), 2.0)); 
+        double calc = ((Math.pow((1/3) * height, 2.0)) + Math.pow((1/3) * width, 2));
+        calc = Math.sqrt(calc);
+        str += "\nPerimeter: " + ((2 * width *(1/3)) + (2 * height * (1/3))) + calc; 
         str += "\n====";
         return str;
     }
