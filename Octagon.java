@@ -1,4 +1,6 @@
-
+/**
+ * @author Elyssa McMaster
+ */
 
 public class Octagon extends Shape{
     private int[] xCoords;
@@ -11,6 +13,18 @@ public class Octagon extends Shape{
     // methods to find initial x coord, y coord, fill, 
     // and color have already been included in the class
     // this one inheirits from
+
+    /**
+     * 
+     *  Octagon Constructor 
+     * 
+     * @param width: width of square within which the octagon is drawn
+     * @param height: height of square within which the octagon is drawn
+     * @param xCoordinate: starting x-position of the drawing of the octagon
+     * @param yCoordinate: starting y-position of the drawing of the octagon
+     * @param color: color of the shape
+     * @param filled: whether the spae is filled in or the color is just for the outline
+     */
     public Octagon(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
         this.width = width;
@@ -39,14 +53,29 @@ public class Octagon extends Shape{
         shapeType = "Octagon";
     }
 
+    /**
+     * 
+     * Width getter
+     * @return width
+     */
     public int getWidth(){
         return width;
     }
         
+    /**
+     * 
+     * Height getter
+     * @return height
+     */
     public int getHeight(){
         return height;
     }
 
+
+    /**
+     * toString prints attributes of Octagon
+     * @return string of attributes in proper format
+     */
     public String toString(){
         String str = super.toString();
         str += "\nWidth: " + width;

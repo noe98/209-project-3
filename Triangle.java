@@ -1,3 +1,8 @@
+/**
+ * @author Elyssa McMaster
+ * Triagnle.java
+ * This file creates a string with attributes of a given triangle
+ */
 
 public class Triangle extends Shape{
     private int[] xCoords;
@@ -11,6 +16,19 @@ public class Triangle extends Shape{
     // methods to find initial x coord, y coord, fill, 
     // and color have already been included in the class
     // this one inheirits from
+
+    /**
+     * 
+     *  Triangle Constructor 
+     * 
+     * @param width: width of square within which the octagon is drawn
+     * @param height: height of square within which the octagon is drawn
+     * @param xCoordinate: starting x-position of the drawing of the octagon
+     * @param yCoordinate: starting y-position of the drawing of the octagon
+     * @param color: color of the shape
+     * @param filled: whether the spae is filled in or the color is just for the outline
+     */
+
     public Triangle(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
         this.width = width;
@@ -29,14 +47,31 @@ public class Triangle extends Shape{
         shapeType = "Triangle";
     }
 
+     /**
+     * 
+     * Width getter
+     * @return width
+     */
+
     public double getWidth(){
         return width;
     }
+
+     /**
+     * 
+     * Height getter
+     * @return height
+     */
 
     public double getHeight(){
         return height;
     }
 
+    /**
+     * toString prints attributes of triangle
+     * @return string of attributes in proper format
+     */
+    
     public String toString(){
         String str = super.toString();
         str += "\nWidth: " + width;
