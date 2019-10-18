@@ -29,11 +29,11 @@ public class Octagon extends Shape{
      */
     public Octagon(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
-        this.width = width;
+        this.width = width; 
         this.height = height;
 
         xCoords = new int[8];
-        xCoords[0]= xCoordinate;
+        xCoords[0]= xCoordinate;        // add x coordinates to array
         xCoords[1]= (xCoordinate + ((width/3)));
         xCoords[2]= xCoordinate + ((2*width)/3);
         xCoords[3]= xCoordinate + ((2*width)/3);
@@ -42,7 +42,7 @@ public class Octagon extends Shape{
         xCoords[6] = xCoordinate - (width/3);;
         xCoords[7] = xCoordinate - (width/3);
     
-        yCoords = new int[8];
+        yCoords = new int[8];       // add y coordinates to a different array
         yCoords[0]= yCoordinate;
         yCoords[1]=yCoordinate;
         yCoords[2]=yCoordinate - (height/3);
@@ -95,15 +95,19 @@ public class Octagon extends Shape{
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
         str += "\n";
-        str += "\nSide 1: " + (width/3);
-        str += "\nSide 2: " + Math.sqrt(Math.pow((height/3),2) + Math.pow((width/3), 2));
-        str += "\nSide 3: " + (height/3);
-        str += "\nSide 3: " + (height/3);
-        str += "\nSide 4: " + Math.sqrt(Math.pow((height/3),2.0) + Math.pow((width/3), 2.0));
-        str += "\nSide 5: " + (width/3);
-        str += "\nSide 6: " + Math.sqrt(Math.pow((height/3),2.0) + Math.pow((width/3), 2.0));
-        str += "\nSide 7: " + (height/3);
-        str += "\nSide 8: " + Math.sqrt(Math.pow((height/3),2.0) + Math.pow((width/3), 2.0)); 
+        // side calculations (based on the square which the octagon is placed in)
+        double width1 = width/3;
+        double height1 = height/3;
+        double pow = Math.sqrt(Math.pow((height/3),2) + Math.pow((width/3), 2));
+        str += "\nSide 1: " + (width1);
+        str += "\nSide 2: " + pow;
+        str += "\nSide 3: " + (height1);
+        str += "\nSide 3: " + (height1);
+        str += "\nSide 4: " + pow;
+        str += "\nSide 5: " + (width1);
+        str += "\nSide 6: " + pow;
+        str += "\nSide 7: " + (height1);
+        str += "\nSide 8: " + pow; 
         double calc = ((Math.pow(((height/3)), 2.0)) + Math.pow((width/3), 2));
         calc = Math.sqrt(calc);
         str += "\nPerimeter: " + ((2 * (width/3)) + (2 * (width/3)) + (4 * calc)); 

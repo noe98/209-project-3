@@ -74,6 +74,7 @@ public class Triangle extends Shape{
 
     public String toString(){
         String str = super.toString();
+        double width1 = width;
         str += "\nWidth: " + width;
         str += "\nHeight: " + height;
         str += "\nCoordinates: " + "(" +xCoords[0] + "," + yCoords[0] +")";
@@ -85,7 +86,7 @@ public class Triangle extends Shape{
         str += "\n";
         side = Math.sqrt(Math.pow(height, 2)+Math.pow(width, 2)/4);
         str += "\nSide 1: " + side;
-        str += "\nSide 2: " + width;
+        str += "\nSide 2: " + width1;
         str += "\nSide 3: " + side;
         str += "\nPerimeter: " + (side *2 + width);
         str += "\n====";

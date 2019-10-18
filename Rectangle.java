@@ -77,6 +77,8 @@ public class Rectangle extends Shape{
 
     public String toString(){
         String str = super.toString();
+        double width1 = width;
+        double height1 = height;
         str += "\nWidth: " + width;
         str += "\nHeight: " + height;
         str += "\nCoordinates: " + "(" +xCoords[0] + "," + yCoords[0] +")";
@@ -87,11 +89,11 @@ public class Rectangle extends Shape{
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
         str += "\n";
-        str += "\nSide 1: " + width;
-        str += "\nSide 2: " + height;
-        str += "\nSide 3: " + width;
-        str += "\nSide 3: " + height;
-        str += "\nPerimeter: " + (2 * width + 2 * height);
+        str += "\nSide 1: " + width1;
+        str += "\nSide 2: " + height1;
+        str += "\nSide 3: " + width1;
+        str += "\nSide 3: " + height1;
+        str += "\nPerimeter: " + (2 * width1 + 2 * height1);
         str += "\n====";
         return str;
     }

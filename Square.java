@@ -62,6 +62,7 @@ public class Square extends Shape{
 
     public String toString(){
         String str = super.toString();
+        double width1 = width;
         str += "\nWidth: " + width;
         str += "\nCoordinates: " + "(" + xCoords[0] + "," + yCoords[0] +")";
         str += ", (" + xCoords[1] + "," +yCoords[1] +")";
@@ -71,11 +72,11 @@ public class Square extends Shape{
         str += "\nFiled: " + filled;
         str += "\nColor: " + color;
         str += "\n";
-        str += "\nSide 1: " + width;
-        str += "\nSide 2: " + width;
-        str += "\nSide 3: " + width;
-        str += "\nSide 4: " + width;
-        str += "\nPerimeter: " + 4 * width;
+        str += "\nSide 1: " + width1;
+        str += "\nSide 2: " + width1;
+        str += "\nSide 3: " + width1;
+        str += "\nSide 4: " + width1;
+        str += "\nPerimeter: " + 4 * width1;
         str += "\n====";
         return str;
     }
