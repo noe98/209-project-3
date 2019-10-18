@@ -23,7 +23,7 @@ public class Square extends Shape{
      * @param xCoordinate: starting x-position of the drawing of the octagon
      * @param yCoordinate: starting y-position of the drawing of the octagon
      * @param color: color of the shape
-     * @param filled: whether the spae is filled in or the color is just for the outline
+     * @param filled: whether the shape is filled in or the color is just for the outline
      */
 
     public Square(int width, int xCoordinate, int yCoordinate, String color, boolean filled){
@@ -63,7 +63,7 @@ public class Square extends Shape{
     public String toString(){
         String str = super.toString();
         str += "\nWidth: " + width;
-        str += "\nCoordinates: " + "(" +xCoords[0] + "," + yCoords[0] +")";
+        str += "\nCoordinates: " + "(" + xCoords[0] + "," + yCoords[0] +")";
         str += ", (" + xCoords[1] + "," +yCoords[1] +")";
         str += ", (" + xCoords[2] + "," +yCoords[2] +")";
         str += ", (" + xCoords[3] + "," +yCoords[3] +")";

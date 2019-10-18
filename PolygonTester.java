@@ -5,9 +5,9 @@ public class PolygonTester{
         System.out.println(s);
         Rectangle r = new Rectangle(2,3,1,1,"PINK",true);
         System.out.println(r);
-        Triangle t = new Triangle(2,3,1,1,"PURPLE",false);
+        Triangle t = new Triangle(2,4,1,1,"PURPLE",false);
         System.out.println(t);
-        Octagon o = new Octagon(5,5,5,5, "YELLOW", true);
-        System.out.println(o);
+        Octagon o = new Octagon(3,3,3,3, "BLACK", false);
+        System.out.println(o); 
     }
 }   
