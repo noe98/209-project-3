@@ -26,7 +26,7 @@ public class Triangle extends Shape{
      * @param xCoordinate: starting x-position of the drawing of the octagon
      * @param yCoordinate: starting y-position of the drawing of the octagon
      * @param color: color of the shape
-     * @param filled: whether the spae is filled in or the color is just for the outline
+     * @param filled: whether the shape is filled in or the color is just for the outline
      */
 
     public Triangle(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
@@ -71,7 +71,7 @@ public class Triangle extends Shape{
      * toString prints attributes of triangle
      * @return string of attributes in proper format
      */
-    
+
     public String toString(){
         String str = super.toString();
         str += "\nWidth: " + width;

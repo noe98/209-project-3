@@ -1,5 +1,7 @@
 /**
  * @author Elyssa McMaster
+ * Octagon.java
+ * This file creates a string with attributes of a given octagon
  */
 
 public class Octagon extends Shape{
@@ -23,7 +25,7 @@ public class Octagon extends Shape{
      * @param xCoordinate: starting x-position of the drawing of the octagon
      * @param yCoordinate: starting y-position of the drawing of the octagon
      * @param color: color of the shape
-     * @param filled: whether the spae is filled in or the color is just for the outline
+     * @param filled: whether the shape is filled in or the color is just for the outline
      */
     public Octagon(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
         super(xCoordinate, yCoordinate, color, filled);
@@ -43,12 +45,12 @@ public class Octagon extends Shape{
         yCoords = new int[8];
         yCoords[0]= yCoordinate;
         yCoords[1]=yCoordinate;
-        yCoords[2]=yCoordinate - ((1/3)*height);
-        yCoords[3] = yCoordinate - ((2/3)*height);
+        yCoords[2]=yCoordinate - ((1/3) * height);
+        yCoords[3] = yCoordinate - ((2/3) * height);
         yCoords[4]= yCoordinate - height;
         yCoords[5]= yCoordinate - height;
-        yCoords[6]= yCoordinate - ((2/3)*height);
-        yCoords[7]= yCoordinate - ((1/3)*height);
+        yCoords[6]= yCoordinate - ((2/3) * height);
+        yCoords[7]= yCoordinate - ((1/3) * height);
             
         shapeType = "Octagon";
     }

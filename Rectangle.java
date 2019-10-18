@@ -1,5 +1,7 @@
 /**
  * @author Elyssa McMaster
+ * Rectangle.java
+ * This file creates a string with attributes of a given rectangle
  */
 
 public class Rectangle extends Shape{
@@ -24,7 +26,7 @@ public class Rectangle extends Shape{
      * @param xCoordinate: starting x-position of the drawing of the octagon
      * @param yCoordinate: starting y-position of the drawing of the octagon
      * @param color: color of the shape
-     * @param filled: whether the spae is filled in or the color is just for the outline
+     * @param filled: whether the shape is filled in or the color is just for the outline
      */
 
     public Rectangle(int width, int height, int xCoordinate, int yCoordinate, String color, boolean filled){
