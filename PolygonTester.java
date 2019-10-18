@@ -7,5 +7,7 @@ public class PolygonTester{
         System.out.println(r);
         Triangle t = new Triangle(2,3,1,1,"PURPLE",false);
         System.out.println(t);
+        Octagon o = new Octagon(5,5,5,5, "PURPLE", true);
+        System.out.println(o);
     }
 }   
