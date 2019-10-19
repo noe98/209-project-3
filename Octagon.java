@@ -96,9 +96,9 @@ public class Octagon extends Shape{
         str += "\nColor: " + color;
         str += "\n";
         // side calculations (based on the square which the octagon is placed in)
-        double width1 = width/3;
-        double height1 = height/3;
-        double pow = Math.sqrt(Math.pow((height/3),2) + Math.pow((width/3), 2));
+        double width1 = (double) width/3;
+        double height1 = (double) height/3;
+        double pow = Math.sqrt(Math.pow(height1,2) + Math.pow(width1, 2));
         str += "\nSide 1: " + (width1);
         str += "\nSide 2: " + pow;
         str += "\nSide 3: " + (height1);
@@ -108,9 +108,9 @@ public class Octagon extends Shape{
         str += "\nSide 6: " + pow;
         str += "\nSide 7: " + (height1);
         str += "\nSide 8: " + pow; 
-        double calc = ((Math.pow(((height/3)), 2.0)) + Math.pow((width/3), 2));
+        double calc = ((Math.pow((height1), 2.0)) + Math.pow(width1, 2));
         calc = Math.sqrt(calc);
-        str += "\nPerimeter: " + ((2 * (width/3)) + (2 * (width/3)) + (4 * calc)); 
+        str += "\nPerimeter: " + ((2 * width1) + (2 * width1) + (4 * calc)); 
         str += "\n====";
         return str;
 
