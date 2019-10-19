@@ -14,10 +14,10 @@ public class ShapeTester{
         System.out.println(t);
         Circle c = new Circle(3,1,1,"BLUE",true);
         System.out.println(c);
-        Oval o = new Oval(3,2,1,1,"GREEN", false);
-        System.out.println(o);
-        Octagon o = new Octagon (2,2,2,2, "GREEN", false);
-        System.out.println(o);
+        Oval ov = new Oval(3,2,1,1,"GREEN", false);
+        System.out.println(ov);
+        Octagon oc = new Octagon (2,2,2,2, "GREEN", false);
+        System.out.println(oc);
         
     }
 }
