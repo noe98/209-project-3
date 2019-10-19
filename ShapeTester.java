@@ -1,3 +1,9 @@
+/**
+ * @author Griffin Noe and Elyssa McMaster
+ * ShapeTetster.java
+ * This code allows for testing to the shape strings
+ */
+
 public class ShapeTester{
     public static void main(String[] args) {
         Square s = new Square(2,1,1,"GREEN",false);
