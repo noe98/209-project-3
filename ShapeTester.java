@@ -16,5 +16,8 @@ public class ShapeTester{
         System.out.println(c);
         Oval o = new Oval(3,2,1,1,"GREEN", false);
         System.out.println(o);
+        Octagon o = new Octagon (2,2,2,2, "GREEN", false);
+        System.out.println(o);
+        
     }
 }
