@@ -3,7 +3,7 @@
  * Octagon.java
  * This file creates a string with attributes of a given octagon
  */
-package shape;
+
 public class Octagon extends Shape{
     private int[] xCoords;
     private int[] yCoords;

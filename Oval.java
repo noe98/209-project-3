@@ -3,7 +3,6 @@
  * Oval.java
  * This file creates a string with attributes of given oval
  */
-package shape;
 public class Oval extends Circle{
     protected int radius2;
 

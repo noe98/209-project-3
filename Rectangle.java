@@ -3,7 +3,7 @@
  * Rectangle.java
  * This file creates a string with attributes of a given rectangle
  */
-package shape;
+
 public class Rectangle extends Shape{
     private int[] xCoords;
     private int[] yCoords;
