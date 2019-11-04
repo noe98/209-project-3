@@ -5,7 +5,7 @@
  * inheiritance from shape classes
  */
 
-
+package shape;
 
 abstract class Shape{
     protected boolean filled;
